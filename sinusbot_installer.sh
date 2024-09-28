@@ -682,8 +682,8 @@ else
     greenMessage "Automatically set time to" $TIME!
   else
     if [[ $(command -v timedatectl) != "" ]]; then
-      service ntp restart
-      timedatectl set-ntp yes
+#      service ntp restart --> TODO
+#      timedatectl set-ntp yes --> TODO
       timedatectl
       TIME=$(date)
       greenMessage "Automatically set time to" $TIME!
